@@ -1,0 +1,562 @@
+  /* ============================================
+       WARNA — ganti di sini untuk ubah tema
+    ============================================ */
+  :root {
+    --blue: #2563eb;
+    /* biru utama */
+    --blue-light: #eff6ff;
+    /* biru muda background */
+    --blue-dark: #1d4ed8;
+    /* biru hover */
+    --white: #ffffff;
+    --text: #1e293b;
+    /* teks utama */
+    --text-muted: #64748b;
+    /* teks abu */
+    --border: #e2e8f0;
+    /* garis border */
+    --radius: 12px;
+    /* sudut card */
+  }
+
+  /* ============================================
+       RESET & BASE
+    ============================================ */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--white);
+    line-height: 1.6;
+  }
+
+  /* ============================================
+       NAVBAR
+    ============================================ */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  .nav-logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+  }
+
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+
+    color: var(--text-muted);
+  }
+
+  .contact {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+
+    color: var(--text-muted);
+  }
+
+  .keahlian {
+    text-decoration: none;
+    color: white;
+  }
+
+  .aktif {
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    color: white;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .keahlian1 {
+    width: 70px;
+    min-height: 70px;
+    text-align: center;
+
+    text-transform: capitalize;
+    white-space: nowrap;
+
+    border: 1px solid #1d4ed8;
+    background-color: #1d4ed8;
+    max-width: 120px;
+    height: 50px;
+  }
+
+  .nav-links .projects:hover {
+    color: var(--blue);
+    text-decoration: underline 4px solid var(--blue);
+    text-underline-offset: 8px;
+
+  }
+
+  .nav-links .contact:hover {
+    color: var(--blue);
+    text-decoration: underline 4px solid var(--blue);
+    text-underline-offset: 8px;
+  }
+
+  .nav-links .keahlian1:hover {
+    color: rgb(50, 27, 199);
+    transform: rotateX(360deg);
+    transition: 1.0s;
+    text-decoration: none;
+  }
+
+  /* ============================================
+       HERO
+    ============================================ */
+  #hero {
+    background: var(--blue-light);
+    padding: 80px 5%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hero-text {
+    flex: 1;
+  }
+
+  /* ── Ubah nama kamu di sini ── */
+  .hero-text h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  .hero-text h1 span {
+    color: var(--blue);
+  }
+
+  /* ── Ubah sub-judul / role ── */
+  .hero-role {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+  }
+
+  /* ── Ubah deskripsi singkat ── */
+  .hero-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    max-width: 480px;
+    margin-bottom: 36px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-solid {
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+  }
+
+  .btn-solid:hover {
+    background: var(--blue-dark);
+  }
+
+  .btn-outline {
+    background: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+  }
+
+  .btn-outline:hover {
+    background: var(--blue-light);
+  }
+
+  /* ── Foto / Avatar ── */
+  .hero-photo {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--white);
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  /* Jika pakai gambar: <img src="foto.jpg" style="width:100%;height:100%;object-fit:cover"> */
+
+  /* ============================================
+       SECTION WRAPPER
+    ============================================ */
+  section {
+    padding: 72px 4%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .section-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    gap: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  /* ============================================
+       KEAHLIAN / SKILLS
+    ============================================ */
+  #skills {
+    background: var(--white);
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .skill-card {
+    background: var(--blue-light);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .skill-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .skill-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .skill-level {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  /* ============================================
+       PROYEK
+    ============================================ */
+  #projects {
+    background: var(--blue-light);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .project-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12);
+  }
+
+  .project-emoji {
+    font-size: 2rem;
+    margin-bottom: 14px;
+  }
+
+  .project-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .project-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+
+  .tag {
+    background: var(--blue-light);
+    color: var(--blue);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    font-family: sans-serif;
+  }
+
+
+
+  .project-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  .project-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ============================================
+       SLIDE 
+    ============================================ */
+
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider-btn {
+  background-color: #285df0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  border: none;
+
+  font-size: large;
+  }
+
+  .slider-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /*gambar*/
+  .slider-image {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+
+
+
+    border-radius: 10px;
+
+    margin: 15px 0;
+  }
+
+  .card-slider {
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .card-img {
+    display: none;
+  }
+
+  .card-img.active-slide {
+    display: block;
+  }
+
+  .slide {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slidex {
+  display: flex;
+  gap: 20px;
+  animation: slide 15s linear infinite;
+}
+
+.slidex img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+  /* ============================================
+       KONTAK
+    ============================================ */
+  #contact {
+    background: var(--white);
+  }
+
+  .contact-box {
+    background: var(--blue);
+    border-radius: var(--radius);
+    padding: 48px;
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .contact-box h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .contact-box p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .contact-btn {
+    padding: 10px 22px;
+    background: var(--white);
+    color: var(--blue);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .contact-btn-fa-brands-fa-tiktok {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 22px;
+    background: var(--white);
+    color: var(--blue);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .contact-btn:hover {
+    background: var(--blue-light);
+    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 24px 2px rgb(0, 191, 255);
+  }
+
+  /* ============================================
+       FOOTER
+    ============================================ */
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+  }
+
+  /* ============================================
+       RESPONSIVE
+    ============================================ */
+  @media (max-width: 768px) {
+    #hero {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 52px 5%;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+    }
+
+    .hero-desc {
+      margin: 0 auto 28px;
+    }
+
+    .hero-photo {
+      width: 250px;
+      height: 250px;
+      font-size: 3rem;
+    }
+
+    .nav-links {
+      gap: 20px;
+    }
+
+    .contact-box {
+      padding: 32px 20px;
+    }
+  }

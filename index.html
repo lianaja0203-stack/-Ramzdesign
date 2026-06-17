@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio — Nama Kamu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav>
+    <!-- Ganti "YourName" dengan nama kamu -->
+    <a href="#hero" class="nav-logo">Ramz Design</a>
+    <ul class="nav-links">
+      <li class="keahlian1"><a href="#skills" class="keahlian aktif">Keahlian</a></li>
+      <li><a href="#projects" class="projects">Proyek</a></li>
+      <li><a href="#contact" class="contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <div class="hero-text">
+      <!-- Ganti nama & role -->
+      <h1>Halo, saya <span>RAMZ DESIGN </span> 👋</h1>
+      <p class="hero-role">Experience & Designer</p>
+      <p class="hero-desc">
+        Saya adalah seorang Canva Designer yang saat ini masih berstatus pelajar SMA.pengalaman belajar desain secara
+        otodidak selama lebih dari satu tahun,Saya pun mulai
+        membuka jasa ini saya pun sudah menerima berbagai klien, mulai dari teman, guru, hingga selaku UMKM,
+
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-solid">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+
+    <!-- Ganti huruf inisial atau pakai <img> -->
+    <div class="hero-photo"><img src="Assets/Icons/Ramz.png" alt="Logo Ramz" />
+    </div>
+  </section>
+
+  <!-- ==================== KEAHLIAN ==================== -->
+  <section id="skills">
+    <h2 class="section-title">DESIGNER</h2>
+    <p class="section-subtitle">Berikut Keahlian yang saya <br>kuasai dibidang canva .</p>
+
+    <div class="skills-grid">
+      <!-- Salin blok .skill-card untuk tambah skill baru -->
+      <div class="skill-card">
+        <div class="skill-icon">⚛️</div>
+        <div>
+          <div class="skill-name">Designer Digital</div>
+          <div class="skill-level">Mahir</div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🟦</div>
+        <div>
+          <div class="skill-name">Desain Poster</div>
+          <div class="skill-level">Mahir</div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🟢</div>
+        <div>
+          <div class="skill-name">Desain Kebutuhan Store</div>
+          <div class="skill-level">Menengah</div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <div>
+          <div class="skill-name">Desain Kebutuhan UMKM</div>
+          <div class="skill-level">Menengah</div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🗄️</div>
+        <div>
+          <div class="skill-name">Desain Produk Cetak</div>
+          <div class="skill-level">Menengah</div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🐳</div>
+        <div>
+          <div class="skill-name">Desain feed</div>
+          <div class="skill-level">Dasar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROYEK ==================== -->
+  <section id="projects">
+    <h2 class="section-title">Proyek</h2>
+    <p class="section-subtitle">Beberapa hal yang sudah saya bangun.</p>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <!-- Salin blok .project-card untuk tambah proyek baru -->
+        <div class="project-tags">
+          <div class="slide">
+            <div class="slidex">
+              <img src="Assets/Images/Poster.jpg" alt="" />
+              <img src="Assets/Images/Testimoni.png" alt="" />
+
+              <img src="Assets/Images/Poster.jpg" alt="" />
+              <img src="Assets/Images/Testimoni.png" alt="" />
+            </div>
+          </div>
+          <span class="tag">Testimoni</span>
+          <span class="tag">Berikut ini adalah testimoni dari klien - klien kami</span>
+        </div>
+        <a href="#" class="project-link">Lihat Proyek →</a>
+      </div>
+
+
+
+      <div class="project-card">
+        <div class="project-tags">
+          <div class="slider-wrapper">
+
+            <!-- TOMBOL KIRI -->
+
+            <button class="slider-btn prev-btn">
+              &#10094;
+            </button>
+
+            <!--SLIDER-->
+            <div class="card-slider">
+              <div class="card-img active-slide">
+                <h1>DESAIN 1</h1>
+                <img src="Assets/Images/Slide1.png" alt="desain 1" class="slider-image" />
+                <p>
+                  RYZE STORE
+                </p>
+              </div>
+
+              <div class="card-img">
+                <h1>DESAIN 2</h1>
+                <img src="Assets/Images/Slide2.png" alt="desain 2" class="slider-image" />
+                <p>
+                  HOAXX STORE
+                </p>
+              </div>
+            </div>
+            <button class="slider-btn next-btn">
+              &#10095;
+            </button>
+            <br>
+          </div>
+          <span class="tag">POSTER</span>
+          <span class="tag">BANNER</span>
+          <span class="tag">STORE</span>
+        </div>
+        <a href="#" class="project-link">Lihat Proyek →</a>
+      </div>
+  </section>
+
+  <!-- ==================== KONTAK ==================== -->
+  <section id="contact">
+    <div class="contact-box">
+      <h3>Mau design tapi bingung!</h3>
+      <p>Silakan serahkan design anda kepada kami<br>
+        Silahkan hubungi kami disini.</p>
+      <div class="contact-links">
+        <!-- Ganti href dengan link asli kamu -->
+        <a href="https://www.instagram.com/ramz.designer01?igsh=MmNxdTl1cDU4azZw" class="contact-btn">📷 Instagram</a>
+        <a href="whatsapp://send?phone=6283873585256?text=Assalamualaikum,%20saya%20ingin%20bertanya%20tentang%20jasa%20desain."
+          class="contact-btn" target="_blank">
+          📞 WhatsApp
+        </a>
+        <a href="https://www.tiktok.com/@ramzdesigner?lang=en-GB" class="contact-btn">🎵 TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <!-- Ganti nama -->
+    © 2026 Yanz desain — Dibuat dengan sepenuh ❤️
+  </footer>
+  <script>
+
+    /*TESTIMONI*/
+
+    const slides = document.querySelectorAll(".card-img");
+
+    const nextBtn = document.querySelector(".next-btn");
+
+    const prevBtn = document.querySelector(".prev-btn");
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active-slide");
+      });
+
+      slides[index].classList.add("active-slide");
+    }
+
+    nextBtn.addEventListener("click", () => {
+
+      currentSlide++;
+
+      if (currentSlide >= slides.length) {
+        currentSlide = 0;
+      }
+
+      showSlide(currentSlide);
+
+    });
+
+    prevBtn.addEventListener("click", () => {
+
+      currentSlide--;
+
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+      }
+
+      showSlide(currentSlide);
+
+    });
+
+    /*TESTIMONI END*/
+
+    const slider = document.querySelector(".slidex");
+
+    // Duplikasi gambar
+    slider.innerHTML += slider.innerHTML;
+
+    let posisi = 0;
+    const kecepatan = 1; // semakin besar semakin cepat
+
+    function animate() {
+      posisi += kecepatan;
+
+      // Jika sudah melewati set gambar pertama
+      if (posisi >= slider.scrollWidth / 2) {
+        posisi = 0;
+      }
+
+      slider.style.transform = `translateX(-${posisi}px)`;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+  </script>
+</body>
+
+</html>
